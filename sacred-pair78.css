@@ -1,0 +1,38 @@
+/* Sacred Pair: owner-requested refinements. No shared product styles changed. */
+.sacred-page78 .options63 small{display:grid;gap:2px;line-height:1.4;text-wrap:balance}
+.sacred-page78 .options63 small>span{display:block}
+.sacred-page78 #bundle_reveal_GNB .pill-row66 span{border-color:var(--section-highlight66);border-width:1.5px}
+.sacred-page78 .timeline-track66{padding:10px 4px 12px 0;gap:24px}
+.sacred-page78 .timeline-track66>article{flex:0 0 100%;max-width:none}
+.sacred-page78 .timeline-track66 ul{padding-right:0}
+.sacred-page78 .timeline-controls66{justify-content:center}
+.sacred-page78 #image_with_text_7rajgi{padding-bottom:36px}
+.sacred-page78 #image_with_text_7rajgi thead th:last-child{font-size:clamp(18px,2vw,24px);line-height:1.25;overflow-wrap:normal;word-break:normal}
+.sacred-page78 #video_with_text_N4YQaq{padding-top:28px}
+.sacred-page78 #video_with_text_N4YQaq p{font-size:18px;line-height:1.65}
+.sacred-page78 .sacred-ways78{display:grid;gap:10px;list-style:none;margin:24px 0 0;padding:0;font:500 16px/1.5 Inter,sans-serif}
+.sacred-page78 .sacred-ways78 li{border-left:3px solid var(--accent);padding:8px 12px;background:#f3f8ed}
+.sacred-page78 #rich_text_VYXLtn{padding:48px 30px;background:#fff!important}
+.sacred-review78{max-width:960px;margin:auto;padding:40px 32px;border:1px solid #055c4d26;border-radius:24px;background:#f2f7ec;text-align:center}
+.sacred-page78 .sacred-review78 .review-eyebrow78{font:600 11px/1.4 Inter,sans-serif;letter-spacing:.12em;color:#055c4d;margin:0 0 14px}
+.sacred-page78 .sacred-review78 h2{font-size:clamp(30px,3.2vw,40px);line-height:1.14;max-width:680px;text-wrap:balance;margin:0 auto 24px}
+.sacred-review-score78{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap}
+.sacred-stars78{font:400 24px/1 Inter,sans-serif;color:#ba8d24;letter-spacing:1px}
+.sacred-page78 .sacred-review-score78 p{display:flex;flex-direction:column;gap:4px;text-align:left;font:400 13px/1.4 Inter,sans-serif;margin:0}
+.sacred-review-score78 strong{font-size:24px;line-height:1.2}
+.sacred-review-score78 strong>span{font-size:14px;font-weight:400}
+.sacred-page78 .sacred-review78 .button63{margin-top:24px}
+@media(max-width:767px){
+ .sacred-page78.product-system66 .hero{gap:12px}
+ .sacred-page78 .hero .thumbs{padding-bottom:4px}
+ .sacred-page78 .options63 button{padding-inline:8px;min-height:96px}
+ .sacred-page78 .options63 small{font-size:12px}
+ .sacred-page78 #image_with_text_7rajgi{padding-bottom:28px}
+ .sacred-page78 #image_with_text_7rajgi thead th:last-child{font-size:18px}
+ .sacred-page78 #video_with_text_N4YQaq{padding-top:24px}
+ .sacred-page78 #video_with_text_N4YQaq p{font-size:17px}
+ .sacred-page78 #rich_text_VYXLtn{padding:36px 20px}
+ .sacred-review78{padding:28px 18px;border-radius:20px}
+ .sacred-page78 .sacred-review78 h2{font-size:30px}
+}
+@media(max-width:360px){.sacred-page78 .options63>div{grid-template-columns:minmax(0,1fr)}.sacred-page78 .options63 button{min-height:92px}.sacred-page78 #image_with_text_7rajgi thead th:last-child{font-size:16px}}
