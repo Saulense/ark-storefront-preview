@@ -1,0 +1,16 @@
+import{readFileSync as read,writeFileSync as write,copyFileSync as copy}from'node:fs';import{createHash}from'node:crypto';
+const sha=x=>createHash('sha256').update(x).digest('hex'),root=process.argv[2]||'_site',path=root+'/pages/breathworks/index.html',before=read(path,'utf8');
+if(sha(before)!=='872bae0ea3c783bf7183912b8c08c46eba157e28f1619d6cb6ed2d5f46b36bf9')throw Error('Breathwork86 baseline differs');
+for(const[file,hash]of Object.entries({'breathwork86.css':'e90563c6aa6f3714bdeeea51cffaf023cc817936a453ed6b122805091d5992ec','breathwork-reveal86.js':'75ff61f34cce27ea6fab00df6b89e3e7b976da3074d14751be030a1caa18f3d2'}))if(sha(read(file))!==hash)throw Error('Breathwork86 pinned asset differs');
+if(before.includes('breathwork86.css')||before.split('</body>').length!==2)throw Error('Breathwork86 structure differs');
+let html=before.replace('class="site63 "','class="site63 breathwork-page86"');
+const hero=html.match(/<section[^>]*id="image_with_text_overlay_zDMwbq"[\s\S]*?<\/section>/)?.[0];if(!hero)throw Error('Missing hero');
+const img=hero.match(/<img class="editorial-image63"[^>]*>/)?.[0];if(!img)throw Error('Missing hero image');
+const picture='<picture><source media="(max-width:767px)" srcset="https://arkofsweden.com/cdn/shop/files/breathwork-section-hero-MOBILE.jpg?v=1742719702&amp;width=1000" width="1000" height="869">'+img.replace('loading="lazy"','loading="eager" fetchpriority="high"').replace('alt="Mobile image"','alt="Daily breathing ritual outdoors" width="1700" height="800"')+'</picture>';
+html=html.replace(hero,hero.replace(img,picture));
+const rituals=html.match(/<section[^>]*id="multicolumn_BwtzPD"[\s\S]*?<\/section>/)?.[0];if(!rituals||rituals.match(/data-youtube="/g)?.length!==4)throw Error('Missing four rituals');html=html.replace(rituals,rituals.replace('class="photo-cards63"','class="ritual-grid86"'));
+const reveal=html.match(/<section[^>]*id="reveal_media_with_text_overlay_AchBRh"[\s\S]*?<\/section>/)?.[0];if(!reveal)throw Error('Missing reveal');
+const mobile=['shutterstock_1718759461.jpg?v=1703205874','shutterstock_1379304119-_1.jpg?v=1703203000','shutterstock_2228136671.jpg?v=1703207715'];let i=0;
+const restored=reveal.replace(/<article>(<img [^>]*>)(<div>[\s\S]*?<\/div>)<\/article>/g,(_,image,copy)=>'<article><div class="reveal-scene86"><picture><source media="(max-width:767px)" srcset="https://arkofsweden.com/cdn/shop/files/'+mobile[i++]+'&amp;width=1000">'+image+'</picture>'+copy+'</div></article>');if(i!==3)throw Error('Expected three reveal panels');html=html.replace(reveal,restored);
+html=html.replace('</body>','<link rel="stylesheet" href="/ark-storefront-preview/breathwork86.css?v=86"><script defer src="/ark-storefront-preview/breathwork-reveal86.js?v=86"></script></body>');
+for(const file of ['breathwork86.css','breathwork-reveal86.js'])copy(file,root+'/'+file);write(path,html);console.log('Breathwork86: responsive hero, four equal grid videos, editorial styling, three source-faithful sticky reveal scenes.');
