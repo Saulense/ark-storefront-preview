@@ -1,0 +1,13 @@
+import{readFileSync as read,writeFileSync as write,copyFileSync as copy}from'node:fs';
+import{createHash}from'node:crypto';
+const sha=x=>createHash('sha256').update(x).digest('hex');
+const root=process.argv[2]||'_site',path=root+'/products/ark-hack-nose-dilator/index.html';
+const html=read(path,'utf8'),css=read('hack-square85.css');
+if(sha(html)!=='44fbcdd5fd48a052d69983e5152d2ffb0340a8d844263d50e773cfff0151c65b')throw Error('Square85 Hack baseline differs');
+if(sha(css)!=='c8950af3808444e7d2c807e79fda1489a5ca8944c7a39dc18442929a22b07022')throw Error('Square85 CSS differs');
+if(html.split('</body>').length!==2||html.includes('hack-square85.css'))throw Error('Square85 structure differs');
+const section=html.match(/<section class="section63 stories63"[^>]*id="multicolumn_jaNd6U"[\s\S]*?<\/section>/)?.[0];
+if(!section||section.match(/<article class="card63"><img /g)?.length!==4)throw Error('Square85 expected four benefit photos');
+const result=html.replace('</body>','<link rel="stylesheet" href="/ark-storefront-preview/hack-square85.css?v=85"></body>');
+copy('hack-square85.css',root+'/hack-square85.css');write(path,result);
+console.log('Square85: one late CSS link, four top-aligned square Hack benefit photos; original content unchanged.');

@@ -1,0 +1,9 @@
+/* ARK Hack benefit photos: square, with the top edge preserved. */
+.hack-page73 #multicolumn_jaNd6U .card63>img{
+ display:block;
+ width:100%;
+ height:auto!important;
+ aspect-ratio:1 / 1!important;
+ object-fit:cover;
+ object-position:center top;
+}

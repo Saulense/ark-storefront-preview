@@ -48,6 +48,8 @@ jobs:
         run: node apply-bundle83.mjs
       - name: Apply reviewed Shop and recommendation cards
         run: node apply-cards84.mjs
+      - name: Apply reviewed top-aligned square Hack benefit photos
+        run: node apply-square85.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
