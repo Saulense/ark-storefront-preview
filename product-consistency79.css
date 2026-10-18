@@ -1,0 +1,39 @@
+/* Reusable product sections, scoped to audited matching templates only. */
+.shared-product79 .review-section79{background:#fff!important;padding:48px 30px!important}
+.shared-review79{max-width:960px;margin:auto;padding:40px 32px;border:1px solid color-mix(in srgb,var(--brand) 22%,white);border-radius:24px;background:color-mix(in srgb,var(--brand) 6%,white);color:#1a1a1f;text-align:center}
+.shared-product79 .shared-review79 .review-eyebrow79{font:600 11px/1.4 Inter,sans-serif;letter-spacing:.12em;color:#37463d;margin:0 0 14px}
+.shared-product79 .shared-review79 h2{font-size:clamp(30px,3.2vw,40px);line-height:1.14;max-width:680px;text-wrap:balance;margin:0 auto 24px;color:#1a1a1f}
+.review-score79{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap}
+.review-stars79{font:400 24px/1 Inter,sans-serif;color:#ba8d24;letter-spacing:1px}
+.shared-product79 .review-score79 p{display:flex;flex-direction:column;gap:4px;text-align:left;font:400 13px/1.4 Inter,sans-serif;margin:0}
+.review-score79 strong{font-size:24px;line-height:1.2}
+.review-score79 strong>span{font-size:14px;font-weight:400}
+.shared-product79 .shared-review79 .button63{margin-top:24px;background:#1a1a1f;color:#fff}
+.shared-product79.product-system66 .faq63 .ark-faq-card{background:color-mix(in srgb,var(--brand) 5%,white);border-color:color-mix(in srgb,var(--brand) 40%,white);box-shadow:2px 3px color-mix(in srgb,var(--brand) 55%,white);color:#1a1a1f}
+.shared-product79.product-system66 .faq63 .ark-faq-card[open]{background:color-mix(in srgb,var(--brand) 10%,white)}
+.shared-product79.product-system66 .faq63 .faq-plus63{background:color-mix(in srgb,var(--purchase-selected66,var(--brand)) 80%,#13251c);color:#fff;border-color:transparent}
+.shared-product79.product-system66 .faq63 h2>span{background:color-mix(in srgb,var(--purchase-selected66,var(--brand)) 80%,#13251c);color:#fff}
+.shared-product79 .recommendations79{background:#fff!important;color:#1a1a1f;padding-block:48px!important}
+.shared-product79 .recommendations79 .product-grid63{grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.shared-product79 .recommendations79 .product-grid63:has(>a:only-child){grid-template-columns:minmax(0,460px);justify-content:center}
+.shared-product79 .recommendations79 .product-tile63{background:transparent;border:0;border-radius:0;box-shadow:none;padding:0;display:flex;flex-direction:column;align-items:center;text-align:center;min-width:0;text-decoration:none;transform:none}
+.shared-product79 .recommendations79 .product-tile63>img{width:100%;aspect-ratio:1;object-fit:contain;border:0;border-radius:0;background:transparent}
+.shared-product79 .recommendations79 .product-tile63 h3{font-size:22px;line-height:1.2;margin:18px 0 10px;padding:0}
+.shared-product79 .recommendations79 .product-tile63>span:not(.buy-now79){font-size:14px;font-weight:600;margin-bottom:18px}
+.shared-product79 .recommendations79 .buy-now79{display:inline-flex;align-items:center;justify-content:center;min-width:112px;min-height:44px;padding:10px 18px;margin-top:auto;border:0;border-radius:9px;background:#1a1a1f;color:#fff;font:500 16px/1.4 Inter,sans-serif}
+.breathing-page79.product-system66 .section63,.breathing-page79.product-system66 .section63:has(+.section63){padding-block:48px}
+.breathing-page79 .benefits66 h2{font-size:clamp(32px,3.6vw,48px);line-height:1.14;text-wrap:balance;max-width:850px}
+.breathing-page79 .benefits-light79 h2>span,.breathing-page79 .recommendations79 h2>span{background:var(--brand);color:#fff}
+.breathing-page79 .card63>.story-media79{position:relative;aspect-ratio:1;margin:0!important;width:100%;overflow:hidden}
+.breathing-page79 .story-media79>img{width:100%;height:100%;aspect-ratio:1;object-fit:cover}
+.breathing-page79 .story-media79>.number63{position:absolute;inset:auto auto 14px 14px;background:var(--accent);color:#1a1a1f;opacity:1;margin:0}
+@media(max-width:767px){
+ .shared-product79 .review-section79{padding:36px 20px!important}
+ .shared-review79{padding:28px 18px;border-radius:20px}
+ .shared-product79 .shared-review79 h2{font-size:30px}
+ .shared-product79 .recommendations79 .product-grid63{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px}
+ .shared-product79 .recommendations79 .product-tile63 h3{font-size:18px}
+ .shared-product79 .recommendations79{padding-block:36px!important}
+ .breathing-page79.product-system66 .section63,.breathing-page79.product-system66 .section63:has(+.section63){padding-block:36px}
+}
+@media(max-width:360px){.shared-product79 .recommendations79 .product-grid63{grid-template-columns:minmax(0,1fr)}}
