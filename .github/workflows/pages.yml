@@ -24,6 +24,8 @@ jobs:
           persist-credentials: false
       - name: Verify immutable public payload and extract
         run: node verify-release.mjs
+      - name: Apply reviewed mobile homepage refinements
+        run: node apply-mobile71.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
