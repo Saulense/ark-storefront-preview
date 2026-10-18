@@ -1,0 +1,45 @@
+/* One Nasal Strips palette: forest green, soft mint, white and ink. */
+body.nasal-page82{--accent:#b6e8ce!important;--pale:#f2f7f3!important}
+.nasal-page82.product-system66 .section63{--section-highlight66:#055c4d!important}
+.nasal-page82.product-system66 .section63 h2>span{background:#055c4d;color:#fff}
+.nasal-page82.product-system66 .benefits66 h2,.nasal-page82.product-system66 .stories63 h2{color:#fff}
+.nasal-page82.product-system66 .benefits66 h2>span,.nasal-page82.product-system66 .stories63 h2>span{background:#b6e8ce;color:#132c24}
+.nasal-page82 .card63,.nasal-page82 .benefit66{background:#fff;color:#1a1a1f}
+.nasal-page82 .benefit-lead66,.nasal-page82 .positive-highlight66{background:#edf5ef}
+.nasal-page82 .benefit-art66 img{filter:grayscale(1)}
+.nasal-page82 .benefit-number66{color:#52685c}
+.nasal-page82 .editable-comparison63 .ark-column63{background:#edf5ef}
+.nasal-page82 .editable-comparison63 thead .ark-column63{background:#055c4d;color:#fff}
+.nasal-page82 .editable-comparison63 .positive63{background:#055c4d;color:#fff}
+.nasal-page82 .editable-comparison63 .negative63{background:#52685c;color:#fff}
+.nasal-page82 .story-media79{aspect-ratio:1!important}
+.nasal-page82 .story-media79>img{width:100%;height:100%;object-fit:cover}
+.nasal-page82 .story-media79>.number63{background:#b6e8ce;color:#132c24}
+.nasal-page82 .clarity-layout66{gap:40px}
+.nasal-page82.breathing-page79.product-system66 .clarity66{padding-bottom:72px}
+.nasal-page82 .clarity-intro66{font-size:17px;line-height:1.65;margin:20px 0 24px}
+.nasal-page82 .clarity-intro66 p{margin:0}
+.nasal-page82 .clarity-highlights66{gap:16px}
+.nasal-page82 .clarity-highlight66{gap:16px;padding:22px;border-color:#bdd0c5;box-shadow:2px 3px #d5e3db;background:#fff}
+.nasal-page82 .clarity-highlight66.positive-highlight66{background:#edf5ef;border-color:#055c4d}
+.nasal-page82 .clarity-icon66{display:grid;place-items:center;flex:none;width:48px;height:48px;padding:10px;border-color:#bdd0c5;background:#f2f7f3;color:#055c4d}
+.nasal-page82 .clarity-icon66 svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.nasal-page82 .clarity-icon66 span{width:20px;height:20px;right:-6px;bottom:-5px;background:#52685c;border:0;font-size:15px;color:#fff}
+.nasal-page82 .positive-highlight66 .clarity-icon66 span{background:#055c4d}
+.nasal-page82 .clarity-highlight66 h3{font-size:24px;line-height:1.22}
+.nasal-page82.shared-product79.product-system66 .faq63 .ark-faq-card{background:#f2f7f3;border-color:#bdd0c5;box-shadow:2px 3px #d5e3db}
+.nasal-page82.shared-product79.product-system66 .faq63 .ark-faq-card[open]{background:#e7f0ea}
+.nasal-page82.shared-product79.product-system66 .faq63 .faq-plus63{background:#055c4d;color:#fff}
+.nasal-page82 .shared-review79{background:#f2f7f3;border-color:#bdd0c5}
+.nasal-page82 .review-stars79{color:#055c4d}
+.nasal-page82 .recommendations79 h2,.nasal-page82 .recommendations79 .intro63{max-width:850px;margin-inline:auto;text-align:center}
+.nasal-page82 .recommendations79 .product-tile63{border:0!important;box-shadow:none!important;background:transparent!important}
+.nasal-page82 .recommendations79 .buy-now79{border:0!important;background:#055c4d;color:#fff}
+@media(max-width:767px){
+ .nasal-page82 .clarity-layout66{gap:28px}
+ .nasal-page82.breathing-page79.product-system66 .clarity66{padding-bottom:60px}
+ .nasal-page82 .clarity-intro66{font-size:16px;line-height:1.65}
+ .nasal-page82 .clarity-highlights66{gap:14px}
+ .nasal-page82 .clarity-highlight66{padding:18px 14px;gap:14px}
+ .nasal-page82 .clarity-highlight66 h3{font-size:22px}
+}
