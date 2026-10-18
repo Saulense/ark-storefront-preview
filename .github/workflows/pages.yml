@@ -38,6 +38,8 @@ jobs:
         run: node apply-sacred78.mjs
       - name: Apply reviewed matching product section refinements
         run: node apply-products79.mjs
+      - name: Apply reviewed homepage caption contrast
+        run: node apply-home80.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only

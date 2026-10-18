@@ -1,0 +1,6 @@
+/* Homepage caption backgrounds only; photographs and text remain fully opaque. */
+.home67 .category-caption67{background:linear-gradient(transparent,rgba(8,43,34,.30))}
+.home67 .featured-article67>div{background:linear-gradient(transparent,rgba(5,46,38,.30))}
+/* Keep the established solid, reflowed large-text accessibility treatment. */
+.ark-large-text64 .home67 .category-caption67,
+.ark-large-text64 .home67 .featured-article67>div{background:#055c4d}
