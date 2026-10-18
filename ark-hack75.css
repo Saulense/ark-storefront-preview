@@ -1,0 +1,32 @@
+.hack-page73 .hack-tiers75{margin-top:26px;margin-bottom:18px;min-width:0}
+.hack-page73 .hack-tiers75 legend{font:700 21px/1.25 Oswald,sans-serif;margin-bottom:14px}
+.hack-page73 .hack-tiers75>div{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.hack-page73 .hack-tiers75 button{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:12px;align-items:center;text-align:left;min-width:0;min-height:132px;width:100%;margin:0;padding:17px 18px;border:1px solid #3d694466;border-radius:15px;background:#f0f5eb;color:#1a1a1f;box-shadow:none;white-space:normal;transition:background .15s,border-color .15s,box-shadow .15s}
+.hack-page73.product-system66 .options63.hack-tiers75 button[aria-pressed=true]{background:#fffef7;color:#1a1a1f;border:2px solid #3d6944;padding:16px 17px;box-shadow:2px 3px #3d6944}
+.hack-page73 .hack-tiers75 button:hover{border-color:#3d6944;background:#e7efdf}
+.hack-page73 .hack-tiers75 button:focus-visible{outline:3px solid #1b3320;outline-offset:4px}
+.hack-page73 .hack-tier-copy75,.hack-page73 .hack-tier-pricing75{display:flex;flex-direction:column;gap:7px;min-width:0}
+.hack-page73 .hack-tier-heading75{display:flex;align-items:center;flex-wrap:wrap;gap:7px 10px}
+.hack-page73 .hack-tier-title75{font:700 23px/1.2 Oswald,sans-serif;text-wrap:balance}
+.hack-page73 .hack-tier-badge75{display:inline-flex;align-items:center;border-radius:99px;padding:4px 9px;background:#bfd79a;color:#1b3320;font:700 11px/1.2 Inter,sans-serif;white-space:nowrap}
+.hack-page73 .hack-tier-caption75{font:400 13px/1.5 Inter,sans-serif;color:#4b584a;display:block}
+.hack-page73 .hack-tier-pricing75{align-items:flex-end;text-align:right;font:400 13px/1.4 Inter,sans-serif}
+.hack-page73 .hack-tier-prices75{display:flex;justify-content:flex-end;align-items:baseline;flex-wrap:wrap;gap:3px 7px;font-variant-numeric:tabular-nums}
+.hack-page73 .hack-tier-prices75 strong{font:700 22px/1.2 Inter,sans-serif;color:#315638}
+.hack-page73 .hack-tier-prices75 s{font-size:13px;color:#667063}
+.hack-page73 .hack-tier-saving75{font-weight:600;font-size:12px;color:#315638}
+.hack-page73 .hack-tier-delivery75{display:inline-flex;border:1px solid #3d694466;border-radius:99px;padding:4px 9px;font-size:10px;color:#315638;background:#fffef7}
+.hack-page73 .hack-render-hooks75,.hack-page73 .hack-tiers75 .option-discount63{display:none!important}
+.hack-page73 .hack-tiers75~.checkout63{margin-top:4px}
+@media(max-width:600px){
+ .hack-page73 .hack-tiers75 legend{font-size:20px}
+ .hack-page73 .hack-tiers75 button{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);padding:14px 12px;gap:10px;min-height:138px;border-radius:13px}
+ .hack-page73.product-system66 .options63.hack-tiers75 button[aria-pressed=true]{padding:13px 11px}
+ .hack-page73 .hack-tier-title75{font-size:21px}
+ .hack-page73 .hack-tier-caption75{font-size:12px}
+ .hack-page73 .hack-tier-prices75 strong{font-size:21px}
+ .hack-page73 .hack-tier-prices75 s{font-size:12px}
+ .hack-page73 .hack-tier-pricing75{gap:6px}
+ .hack-page73 .hack-tier-delivery75{font-size:10px;padding:4px 7px}
+}
+@media(prefers-reduced-motion:reduce){.hack-page73 .hack-tiers75 button{transition:none}}
