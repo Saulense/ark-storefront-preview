@@ -1,0 +1,23 @@
+// Deterministic post-extraction overlay; immutable baseline archives stay untouched.
+import{readFileSync as read,writeFileSync as write,copyFileSync as copy}from'node:fs';
+import{createHash}from'node:crypto';
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const root=process.argv[2]||'_site',index=root+'/index.html',before=read(index,'utf8');
+if(sha(before)!=='9d118407e1ceb12fe8becafd2c616ca3a0c4fde4ed5065ee273632d5117e72ac')throw Error('Homepage baseline differs; reconcile, do not overwrite');
+const assets={'home-responsive72.css':'654df80be2023efe893ce5da3ed4a6fac19e282b9201698224116219d0e3e948','home-responsive72.js':'784316b461e781e87ccb3a3b0b97d14037b8b03e57d9237bcfcf49f76836b1bc'};
+for(const[name,expected]of Object.entries(assets))if(sha(read(name))!==expected)throw Error('Overlay asset differs: '+name);
+const start=before.indexOf('<section class="home-section67 home-favorites67"'),end=before.indexOf('</section>',start);
+if(start<0||end<start)throw Error('Favorites section not found');
+let section=before.slice(start,end);
+const matches=[...section.matchAll(/<a class="home-button67" href="\/ark-storefront-preview\/pages\/shop\/">View all products [\s\S]*?<\/a>/g)];
+if(matches.length!==1)throw Error('Expected one View all products link');
+section=section.replace(matches[0][0],'');
+if(!section.endsWith('</div>'))throw Error('Unexpected favorites wrapper');
+section=section.slice(0,-6)+matches[0][0]+'</div>';
+let after=before.slice(0,start)+section+before.slice(end);
+if(after.split('</body>').length!==2)throw Error('Unexpected homepage body');
+const tags='<link rel="stylesheet" href="/ark-storefront-preview/home-responsive72.css?v=72"><script defer src="/ark-storefront-preview/home-responsive72.js?v=72"></script>';
+after=after.replace('</body>',tags+'</body>');
+for(const name of Object.keys(assets))copy(name,root+'/'+name);
+write(index,after);
+console.log('Applied reviewed responsive homepage refinements; other baseline files preserved.');
