@@ -1,0 +1,25 @@
+.hack-page73.product-system66 .related-products76{--section-bg66:#fff!important;--section-ink66:#1a1a1f!important;--section-highlight66:#3d6944!important;background:#fff!important;color:#1a1a1f;border:0;border-radius:0;box-shadow:none}
+.related-products76 header{max-width:700px;margin:0 auto 30px;text-align:center}
+.hack-page73.product-system66 .related-products76 h2{color:#1a1a1f;font-size:clamp(30px,3.6vw,42px);line-height:1.15;margin-bottom:16px}
+.hack-page73.product-system66 .related-products76 h2 span{color:#3d6944;background:transparent;box-shadow:none;padding:0;border-radius:0}
+.hack-page73 .related-products76 header p{color:#404844;font:400 16px/1.6 Inter,sans-serif;margin:0}
+.related-grid76{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;max-width:850px;margin-inline:auto}
+.related-product76{display:flex;flex-direction:column;align-items:center;min-width:0;color:#1a1a1f;text-align:center;text-decoration:none;background:transparent;border:0;border-radius:0;box-shadow:none;padding:0}
+.related-product76 img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;border:0;border-radius:0;box-shadow:none;background:#fff}
+.hack-page73 .related-product76 h3{font:700 22px/1.25 Oswald,sans-serif;color:#1a1a1f;text-align:center;margin:16px 0 10px;text-wrap:balance;flex:1}
+.related-price76{display:block;font:400 14px/1.5 Inter,sans-serif;color:#404844;margin-bottom:13px}
+.related-product76 .home-buy67{display:inline-flex;align-items:center;justify-content:center;align-self:center;gap:0;min-width:112px;min-height:44px;margin:0;padding:11px 18px;border:1px solid #1a1a1f;border-radius:7px;background:#1a1a1f;color:#fff;font:500 14px/1.4 Inter,sans-serif}
+.related-product76:focus-visible{outline:3px solid #3d6944;outline-offset:6px;border-radius:4px}
+.related-product76:hover .home-buy67{background:#315638;border-color:#315638}
+@media(max-width:767px){
+ .related-grid76{gap:18px}
+ .related-products76 header{margin-bottom:22px}
+ .hack-page73.product-system66 .related-products76 h2{font-size:30px}
+ .hack-page73 .related-products76 header p{font-size:15px}
+ .hack-page73 .related-product76 h3{font-size:18px;margin:14px 0 8px}
+ .related-price76{font-size:13px}
+ .footer-trust67[aria-labelledby] .home-inner67>div{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:100%;gap:16px;width:100%;padding:4px 4px 12px;scroll-padding-inline:4px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin}
+ .footer-trust67[aria-labelledby] article{width:100%;min-width:0;scroll-snap-align:start;scroll-snap-stop:always}
+}
+.ark-large-text64 .footer-trust67 .home-inner67>div{grid-template-columns:minmax(0,1fr);grid-auto-flow:row;grid-auto-columns:auto;overflow:visible}
+.ark-large-text64 .related-grid76{grid-template-columns:minmax(0,1fr)}

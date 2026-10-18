@@ -30,6 +30,8 @@ jobs:
         run: node apply-hack73.mjs
       - name: Apply reviewed stacked ARK Hack pack rows
         run: node apply-hack75.mjs
+      - name: Apply reviewed shared trust and recommendation sections
+        run: node apply-sections76.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
