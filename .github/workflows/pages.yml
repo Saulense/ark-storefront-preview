@@ -44,6 +44,8 @@ jobs:
         run: node apply-footer81.mjs
       - name: Apply reviewed Nasal Strips palette refinements
         run: node apply-nasal82.mjs
+      - name: Apply reviewed Drops and Hack bundle design
+        run: node apply-bundle83.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only

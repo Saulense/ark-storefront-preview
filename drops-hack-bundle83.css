@@ -1,0 +1,32 @@
+/* Bundle uses the existing ARK Hack73 palette and Hack75 source-priced rows. */
+body.bundle-page83{--purchase-selected66:#3d6944!important}
+.bundle-page83 .flavors83{margin-top:22px;margin-bottom:22px;min-width:0}
+.bundle-page83 .flavors83 legend{font:700 21px/1.25 Oswald,sans-serif;margin-bottom:14px}
+.bundle-page83 .flavors83>div{gap:12px}
+.bundle-page83 .flavors83 button{min-height:52px;padding:12px;font-size:15px;border-radius:12px}
+.bundle-page83.product-system66 .flavors83 button[aria-pressed=true]{background:#3d6944;color:#fff;border-color:#3d6944}
+.bundle-page83 .purchase-note83{font:400 13px/1.5 Inter,sans-serif;color:#4b584a;margin:0 0 14px}
+.bundle-page83 .hack-tiers75{margin-top:0}
+.bundle-page83 .hack-tier-note83{font:400 12px/1.4 Inter,sans-serif;color:#4b584a}
+.bundle-page83 .hero-benefits63 svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.bundle-page83 .source-art63 .full-art63{width:100%;max-width:640px;margin:auto;aspect-ratio:1;object-fit:contain;border-radius:20px}
+.bundle-page83 .shoppable63>.inner63>h2,.bundle-page83 .shoppable63 .video-intro63{max-width:820px;margin-inline:auto;text-align:center}
+.bundle-page83 .shoppable63 .video-intro63{font-size:16px;line-height:1.6;margin-bottom:28px}
+.bundle-page83 .shoppable63 .card63{background:#fffef7;border-color:#3d694466;box-shadow:2px 3px #3d6944}
+.bundle-page83 .shoppable63 .media-frame63{aspect-ratio:9/16;border:0;box-shadow:none;border-radius:inherit;overflow:hidden}
+.bundle-page83 .shoppable63 .media-frame63 img{width:100%;height:100%;object-fit:cover}
+.bundle-page83 .shoppable63 .media-frame63>span{background:#bfd79a;color:#1b3320;border:1px solid #3d6944;box-shadow:2px 3px #1b3320}
+.bundle-page83.shared-product79.product-system66 .faq63 .ark-faq-card{background:#fffef7;border-color:#3d694466;box-shadow:2px 3px #3d694455}
+.bundle-page83.shared-product79.product-system66 .faq63 .ark-faq-card[open]{background:#edf3e8}
+.bundle-page83.shared-product79.product-system66 .faq63 .faq-plus63{background:#3d6944;color:#fff}
+.bundle-page83 .shared-review79{background:#edf3e8;border-color:#3d694455}
+.bundle-page83 .review-stars79{color:#3d6944}
+@media(max-width:767px){
+ .bundle-page83 .hero{gap:22px}
+ .bundle-page83 .flavors83{margin-top:20px;margin-bottom:20px}
+ .bundle-page83 .flavors83 button{min-height:50px}
+ .bundle-page83 .flavors83 legend{font-size:20px}
+ .bundle-page83 .shoppable63 .photo-cards63{grid-auto-columns:82%;gap:16px}
+ .bundle-page83 .shoppable63 .video-intro63{font-size:15px;margin-bottom:24px}
+}
+@media(min-width:768px){.bundle-page83 .shoppable63 .photo-cards63{grid-auto-columns:calc((100% - 48px)/3)}}
