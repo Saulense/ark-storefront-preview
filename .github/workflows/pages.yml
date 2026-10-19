@@ -54,6 +54,8 @@ jobs:
         run: node apply-breathwork86.mjs
       - name: Apply reviewed premium editorial pages and compact bundle cards
         run: node apply-premium87.mjs
+      - name: Apply reviewed source-matched NeuroFuel kit builder and sections
+        run: node apply-neurofuel89.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
