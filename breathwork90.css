@@ -1,0 +1,11 @@
+/* Breathworks-only refinements. Preserve the full source artwork and original reveal. */
+.breathwork-premium87 #image_with_text_overlay_zDMwbq .split63{min-height:0}
+.breathwork-premium87 #image_with_text_overlay_zDMwbq .split63>div:first-child{grid-column:1;grid-row:1}
+.breathwork-premium87 #image_with_text_overlay_zDMwbq .split63>div:last-child{position:relative;inset:auto;grid-column:1/-1;grid-row:1;height:auto;align-self:start}
+.breathwork-premium87 #image_with_text_overlay_zDMwbq picture{height:auto}
+.breathwork-premium87 #image_with_text_overlay_zDMwbq img{height:auto;object-fit:contain}
+.breathwork-premium87 #rich_text_NGTitq .button63{min-height:56px;padding:15px 24px;border:1.5px solid #1a1a1f;border-radius:8px;background:#1a1a1f;color:#fff;box-shadow:3px 4px 0 #b6e8ce;font:500 16px/1.4 Inter,sans-serif;margin:8px 0;gap:24px;max-width:100%;transition:transform .18s}
+.breathwork-premium87 #rich_text_NGTitq .button63:hover{transform:translateY(-2px)}
+.breathwork-premium87 #rich_text_NGTitq .button63:focus-visible{outline:3px solid #055c4d;outline-offset:6px}
+@media(max-width:767px){.breathwork-premium87 #rich_text_NGTitq .button63{min-height:54px;font-size:14px;padding:14px 20px;gap:16px}}
+@media(prefers-reduced-motion:reduce){.breathwork-premium87 #rich_text_NGTitq .button63{transition:none}.breathwork-premium87 #rich_text_NGTitq .button63:hover{transform:none}}
