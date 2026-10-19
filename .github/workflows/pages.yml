@@ -62,6 +62,8 @@ jobs:
         run: node apply-refill91.mjs
       - name: Apply reviewed Mouth Tape lifestyle image and text
         run: node apply-mouth92.mjs
+      - name: Apply reviewed complete NeuroFuel visual flow and motion
+        run: node apply-neurofuel93.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
