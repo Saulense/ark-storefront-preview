@@ -1,0 +1,80 @@
+/* Extra Strong only. Shared Lemon Ice imagery and typography rhythm, no commerce changes. */
+.melts-premium99 .ark-clarity-study .melts-ritual67 {
+  display:flex;align-items:center;justify-content:center;gap:28px;
+  width:fit-content;max-width:100%;margin:30px auto 34px;padding:20px 32px;
+  border:2px solid #1a1a1f;border-radius:20px;background:#fff4e4;
+  color:#1a1a1f;box-shadow:5px 6px 0 #1a1a1f;transform:rotate(-1deg);
+}
+.melts-premium99 .ark-clarity-study .melts-ritual67>svg {
+  width:150px;height:auto;flex:0 0 150px;
+}
+.melts-premium99 .ark-clarity-study .melts-ritual67 h3 {
+  display:flex;flex-direction:column;gap:3px;margin:0;padding:0;border:0;
+  font:800 clamp(30px,3.1vw,44px)/1.1 Oswald,sans-serif;
+  letter-spacing:-.02em;text-align:left;color:#1a1a1f;
+}
+.melts-premium99 .melts-ritual67 h3>span {display:block;max-width:100%}
+.melts-premium99 .melts-ritual67 h3>span:last-child {color:#084254}
+.melts-premium99 .ark-performance-inner {max-width:1000px}
+.melts-premium99 .ark-comparison-card {
+  margin-top:68px;border:2px solid #1a1a1f;border-radius:22px;
+  box-shadow:5px 6px 0 #1a1a1f;background:#fffef9;
+}
+.melts-premium99 .ark-performance-comparison .ark-comparison-table.paired thead th {
+  width:50%;padding:0 24px 24px;text-align:center;vertical-align:bottom;
+  border-bottom:2px solid #1a1a1f;
+}
+.melts-premium99 .ark-performance-comparison .ark-comparison-table.paired thead th>.ark-comparison-product-label {
+  display:block;min-height:1.25em;margin:0;font:700 28px/1.25 Oswald,sans-serif;
+  letter-spacing:-.015em;text-align:center;text-transform:uppercase;
+}
+.melts-premium99 .ark-performance-comparison .ark-comparison-object {
+  position:relative;display:flex;align-items:center;justify-content:center;
+  width:100%;max-width:280px;height:160px;margin:-30px auto 14px;
+  gap:6px;mix-blend-mode:normal;
+}
+.melts-premium99 .ark-performance-comparison .ark-comparison-object img {
+  display:block;max-width:100%;min-width:0;object-fit:contain!important;
+  width:190px;height:190px;flex:0 1 auto;
+  filter:drop-shadow(0 8px 6px #161b1424);
+}
+.melts-premium99 .ark-performance-comparison .ark-comparison-object.old-energy-objects .is-coffee {
+  width:122px!important;max-width:52%!important;height:122px!important;flex:0 1 122px;transform:rotate(3deg);
+}
+.melts-premium99 .ark-performance-comparison .ark-comparison-object.old-energy-objects .is-can {
+  width:106px!important;max-width:46%!important;height:142px!important;flex:0 1 106px;transform:rotate(-7deg) translateY(-5px);
+}
+.melts-premium99 .ark-performance-comparison .ark-comparison-table.paired tbody td {
+  padding:22px 24px;text-align:left;font-size:18px;line-height:1.5;
+}
+.melts-premium99 .ark-comparison-table.paired td>div {gap:14px;align-items:center}
+.melts-premium99 .ark-comparison-table.paired .ark-result {
+  width:32px;height:32px;flex:0 0 32px;
+}
+@media(max-width:767px) {
+  .melts-premium99 .ark-clarity-study .melts-ritual67 {
+    gap:12px;padding:18px 16px;margin:26px auto 30px;border-radius:16px;
+    box-shadow:4px 5px 0 #1a1a1f;
+  }
+  .melts-premium99 .ark-clarity-study .melts-ritual67>svg {width:92px;flex-basis:92px}
+  .melts-premium99 .ark-clarity-study .melts-ritual67 h3 {font-size:clamp(25px,6.3vw,34px)}
+  .melts-premium99 .ark-comparison-card {margin-top:56px;border-radius:18px;box-shadow:4px 5px 0 #1a1a1f}
+  .melts-premium99 .ark-performance-comparison .ark-comparison-table.paired thead th {padding:0 10px 18px}
+  .melts-premium99 .ark-performance-comparison .ark-comparison-table.paired thead th>.ark-comparison-product-label {font-size:20px;line-height:1.25}
+  .melts-premium99 .ark-performance-comparison .ark-comparison-object {height:116px;margin:-24px auto 12px;gap:2px}
+  .melts-premium99 .ark-performance-comparison .ark-comparison-object img {width:140px;height:140px}
+  .melts-premium99 .ark-performance-comparison .ark-comparison-object.old-energy-objects .is-coffee {width:76px!important;height:76px!important;flex-basis:76px}
+  .melts-premium99 .ark-performance-comparison .ark-comparison-object.old-energy-objects .is-can {width:66px!important;height:98px!important;flex-basis:66px}
+  .melts-premium99 .ark-performance-comparison .ark-comparison-table.paired tbody td {padding:16px 10px;font-size:14px;line-height:1.5}
+  .melts-premium99 .ark-comparison-table.paired td>div {gap:8px;align-items:flex-start}
+  .melts-premium99 .ark-comparison-table.paired .ark-result {width:28px;height:28px;flex-basis:28px}
+}
+@media(max-width:359px) {
+  .melts-premium99 .ark-clarity-study .melts-ritual67 {flex-direction:column;text-align:center;gap:4px;padding:16px 14px;transform:none}
+  .melts-premium99 .ark-clarity-study .melts-ritual67>svg {width:100px;flex-basis:auto}
+  .melts-premium99 .ark-clarity-study .melts-ritual67 h3 {text-align:center;font-size:29px}
+}
+.ark-large-text64.melts-premium99 .ark-clarity-study .melts-ritual67 {flex-direction:column;transform:none;width:100%}
+.ark-large-text64.melts-premium99 .ark-clarity-study .melts-ritual67 h3 {font-size:3.4rem;text-align:center}
+.ark-large-text64.melts-premium99 .ark-clarity-study .melts-ritual67>svg {flex-basis:auto}
+.ark-large-text64.melts-premium99 .ark-comparison-table.paired td>div {flex-wrap:wrap}

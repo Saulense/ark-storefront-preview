@@ -64,6 +64,8 @@ jobs:
         run: node apply-mouth92.mjs
       - name: Apply reviewed complete NeuroFuel visual flow and motion
         run: node apply-neurofuel93.mjs
+      - name: Apply Extra Strong ritual and comparison polish
+        run: node apply-melts99.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
