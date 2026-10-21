@@ -96,6 +96,8 @@ jobs:
         run: node apply-explore123.mjs
       - name: Show adjacent Sacred Pair timeline stages
         run: node apply-timeline124.mjs
+      - name: Apply shared product highlights and animated single-open FAQs
+        run: node apply-highlights125.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
