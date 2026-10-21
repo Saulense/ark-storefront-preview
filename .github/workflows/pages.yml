@@ -118,8 +118,6 @@ jobs:
         run: node apply-heading134.mjs
       - name: Match reviewed Shop content width to the live reference
         run: node apply-width135.mjs
-      - name: Apply reviewed shared section and review refinements
-        run: node apply-sections136.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
