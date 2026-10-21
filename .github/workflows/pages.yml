@@ -72,6 +72,8 @@ jobs:
         run: node apply-billing101.mjs
       - name: Apply shared product cards and horizontal navigation arrows
         run: node apply-home111.mjs
+      - name: Match collection caption gradient to dark-green brand strip
+        run: node apply-caption112.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only

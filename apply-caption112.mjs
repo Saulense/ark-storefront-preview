@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const root=process.argv[2]||'_site',file=root+'/home-captions80.css';
+const old=fs.readFileSync(file,'utf8');
+if(crypto.createHash('sha256').update(old).digest('hex')!=='09331d9474f66d73fe1ad49bdbe57baac960fe2dd604066afb558c2bbab30612')throw Error('Caption baseline differs');
+const next=old.replace('linear-gradient(transparent,rgba(8,43,34,.30))','linear-gradient(to top,rgba(5,92,77,.30) 0%,rgba(5,92,77,0) 100%)');
+if(next===old)throw Error('Missing caption rule');
+const html=fs.readFileSync(root+'/index.html','utf8');
+if(!html.includes('home-captions80.css?v=80'))throw Error('Missing caption link');
+fs.writeFileSync(file,next);
+fs.writeFileSync(root+'/index.html',html.replace('home-captions80.css?v=80','home-captions80.css?v=112'));
+console.log('Caption112: collection dark-green 30%-to-transparent gradient, desktop/mobile; large-text solid fallback preserved.');
