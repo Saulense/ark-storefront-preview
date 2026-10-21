@@ -136,6 +136,8 @@ jobs:
         run: node apply-palette144.mjs
       - name: Apply reviewed Lemon Ice colour and corner corrections
         run: node apply-lemon145.mjs
+      - name: Fill reviewed rounded section joins with adjacent colours
+        run: node apply-joins146.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
