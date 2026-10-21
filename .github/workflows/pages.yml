@@ -78,6 +78,8 @@ jobs:
         run: node apply-email-arrows113.mjs
       - name: Preserve excluded footer and add View all spacing
         run: node apply-spacing114.mjs
+      - name: Clip mobile review slider at screen edges
+        run: node apply-reviews115.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
