@@ -150,6 +150,8 @@ jobs:
         run: node apply-headings151.mjs
       - name: Centre the final Energy Bars clarity icon
         run: node apply-icons152.mjs
+      - name: Apply reviewed product spacing and ARK Hack polish
+        run: node apply-polish153.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
