@@ -92,6 +92,8 @@ jobs:
         run: node apply-shared121.mjs
       - name: Apply live Shop styling and authentic shared review cards
         run: node apply-shared122.mjs
+      - name: Limit Explore review links to the approved migration pages
+        run: node apply-explore123.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
