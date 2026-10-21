@@ -158,6 +158,8 @@ jobs:
         run: node apply-bundle155.mjs
       - name: Apply Performance Pack palette and spacing 156
         run: node apply-performance156.mjs
+      - name: Apply reviewed NeuroFuel and review-heading polish157
+        run: node apply-neurofuel157.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
