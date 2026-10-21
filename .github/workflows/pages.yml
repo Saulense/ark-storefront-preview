@@ -114,6 +114,8 @@ jobs:
         run: node apply-neurofuel132.mjs
       - name: Apply reviewed selected-package owner photographs
         run: node apply-packshots133.mjs
+      - name: Restore the reviewed Shop savings heading highlight
+        run: node apply-heading134.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
