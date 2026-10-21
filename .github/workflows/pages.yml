@@ -144,6 +144,8 @@ jobs:
         run: node apply-pack148.mjs
       - name: Show image flavour choices and item rows for Drops Hack Bundle
         run: node apply-bundle149.mjs
+      - name: Extend Sacred Pair mobile timeline clipping to screen edges
+        run: node apply-timeline150.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
