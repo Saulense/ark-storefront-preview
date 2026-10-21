@@ -84,6 +84,8 @@ jobs:
         run: node apply-shared117.mjs
       - name: Apply shared purchase alignment and review snapshots
         run: node apply-shared118.mjs
+      - name: Apply consistent gallery spacing and image variant selectors
+        run: node apply-shared119.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
