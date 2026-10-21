@@ -154,6 +154,8 @@ jobs:
         run: node apply-polish153.mjs
       - name: Apply reviewed Mouth Tape finishing touches
         run: node apply-mouth154.mjs
+      - name: Apply reviewed bundle artwork and cacao daily ritual
+        run: node apply-bundle155.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
