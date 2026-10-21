@@ -168,6 +168,8 @@ jobs:
         run: node apply-cleanup160.mjs
       - name: Apply reviewed Original supplied art and free bottle161
         run: node apply-original161.mjs
+      - name: Apply reviewed cacao comparison labels and green162
+        run: node apply-cacao162.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
