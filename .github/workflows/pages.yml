@@ -160,6 +160,8 @@ jobs:
         run: node apply-performance156.mjs
       - name: Apply reviewed NeuroFuel and review-heading polish157
         run: node apply-neurofuel157.mjs
+      - name: Tighten reviewed NeuroFuel mobile media gap158
+        run: node apply-gap158.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
