@@ -138,6 +138,8 @@ jobs:
         run: node apply-lemon145.mjs
       - name: Fill reviewed rounded section joins with adjacent colours
         run: node apply-joins146.mjs
+      - name: Use bag-only Nasal Strips pack photographs for both colours
+        run: node apply-pack147.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
