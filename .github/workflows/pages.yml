@@ -98,6 +98,8 @@ jobs:
         run: node apply-timeline124.mjs
       - name: Apply shared product highlights and animated single-open FAQs
         run: node apply-highlights125.mjs
+      - name: Keep new product highlights on the product page
+        run: node apply-links126.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
