@@ -104,6 +104,8 @@ jobs:
         run: node apply-interactions127.mjs
       - name: Apply shared edge-to-edge reviews and photo-first review cards
         run: node apply-reviews128.mjs
+      - name: Apply shared photo columns and control-free demonstration loops
+        run: node apply-story129.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
