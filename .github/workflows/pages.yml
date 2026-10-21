@@ -172,6 +172,8 @@ jobs:
         run: node apply-cacao162.mjs
       - name: Apply reviewed Performance Pack one-row selectors163
         run: node apply-performance163.mjs
+      - name: Apply reviewed Sacred Pair mobile comparison spacing164
+        run: node apply-sacred164.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
