@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import path from 'node:path';
+const sha=x=>crypto.createHash('sha256').update(x).digest('hex');
+const root=process.argv[2]||'_site';
+const manifest=fs.readFileSync('changes111.json');
+if(sha(manifest)!=='a5748e6cb7065da53fde39cc570919ed331c9f22b7eb1e2cddff77582dfbcf69')throw Error('Release manifest mismatch');
+const changes=JSON.parse(manifest);
+if(changes.length!==38)throw Error('Unexpected release file count');
+const outputs=changes.map(item=>{
+ if(path.isAbsolute(item.path)||item.path.split('/').includes('..'))throw Error('Unsafe path');
+ const target=path.join(root,item.path),exists=fs.existsSync(target);
+ const before=exists?fs.readFileSync(target):Buffer.alloc(0);
+ if(item.before===null?exists:sha(before)!==item.before)throw Error('Baseline mismatch: '+item.path);
+ const result=Buffer.concat([before.subarray(0,item.start),Buffer.from(item.insert,'base64'),before.subarray(item.start+item.remove)]);
+ if(sha(result)!==item.after)throw Error('Output mismatch: '+item.path);
+ return [target,result];
+});
+for(const [target,result]of outputs)fs.writeFileSync(target,result);
+console.log('Home111: verified shared cards, preview menu and navigation arrows; '+outputs.length+' files.');

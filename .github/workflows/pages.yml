@@ -70,6 +70,8 @@ jobs:
         run: node apply-billing100.mjs
       - name: Remove billing interaction frames
         run: node apply-billing101.mjs
+      - name: Apply shared product cards and horizontal navigation arrows
+        run: node apply-home111.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
