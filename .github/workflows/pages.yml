@@ -100,6 +100,8 @@ jobs:
         run: node apply-highlights125.mjs
       - name: Keep new product highlights on the product page
         run: node apply-links126.mjs
+      - name: Unify testimonial sliders and pack selection motion
+        run: node apply-interactions127.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
