@@ -130,6 +130,8 @@ jobs:
         run: node apply-neurofuel141.mjs
       - name: Apply reviewed continuous photo and text review masonry
         run: node apply-masonry142.mjs
+      - name: Apply reviewed Performance Pack joint product story
+        run: node apply-performance143.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
