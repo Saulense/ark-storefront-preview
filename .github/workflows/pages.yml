@@ -146,6 +146,8 @@ jobs:
         run: node apply-bundle149.mjs
       - name: Extend Sacred Pair mobile timeline clipping to screen edges
         run: node apply-timeline150.mjs
+      - name: Apply clear product-specific checkout accordion headings
+        run: node apply-headings151.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
