@@ -202,6 +202,8 @@ jobs:
         run: node apply-pricing179.mjs
       - name: Pin reviewed pricing module graph to immutable179r1 assets
         run: node apply-pricing179r1.mjs
+      - name: Apply reviewed premium pricing studio180
+        run: node apply-pricing180.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
