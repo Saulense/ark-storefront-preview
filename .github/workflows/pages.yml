@@ -194,6 +194,8 @@ jobs:
         run: node apply-shop174.mjs
       - name: Apply reviewed shared dark-green footer175
         run: node apply-footer175.mjs
+      - name: Add reviewed standalone pricing calculator177
+        run: node apply-pricing177.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
