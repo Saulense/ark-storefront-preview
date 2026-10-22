@@ -180,6 +180,8 @@ jobs:
         run: node apply-rhythm167.mjs
       - name: Apply reviewed product copy and proposed return wording168
         run: node apply-copy168.mjs
+      - name: Apply reviewed Drops Breathe and Focus positioning169
+        run: node apply-position169.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
