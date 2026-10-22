@@ -1,0 +1,4 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';
+const root=path.resolve('_site'),items=JSON.parse(fs.readFileSync('changes170.json')),hash=s=>crypto.createHash('sha256').update(s).digest('hex');
+const ready=items.map(c=>{const target=path.resolve(root,c.file);if(!target.startsWith(root+path.sep))throw Error('Invalid path');if(c.before===null?fs.existsSync(target):!fs.existsSync(target)||hash(fs.readFileSync(target))!==c.before)throw Error('Baseline mismatch '+c.file);const bytes=Buffer.from(c.after,'base64');if(hash(bytes)!==c.sha256)throw Error('Payload mismatch '+c.file);return{target,bytes};});
+for(const c of ready){fs.mkdirSync(path.dirname(c.target),{recursive:true});fs.writeFileSync(c.target,c.bytes);if(hash(fs.readFileSync(c.target))!==hash(c.bytes))throw Error('Saved mismatch');}console.log('Applied '+ready.length+' reviewed review-centering files');
