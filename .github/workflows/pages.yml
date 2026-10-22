@@ -190,6 +190,8 @@ jobs:
         run: node apply-review-border172.mjs
       - name: Apply reviewed desktop section rhythm173
         run: node apply-desktop173.mjs
+      - name: Apply reviewed Shop card alignment174
+        run: node apply-shop174.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
