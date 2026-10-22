@@ -210,6 +210,8 @@ jobs:
         run: node apply-pricing182.mjs
       - name: Apply reviewed whole-site audit183
         run: node apply-website183.mjs
+      - name: Apply reviewed pricing dashboard184
+        run: node apply-pricing184.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
