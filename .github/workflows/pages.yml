@@ -176,6 +176,8 @@ jobs:
         run: node apply-sacred164.mjs
       - name: Apply reviewed autoplay loop-only framing165
         run: node apply-loop165.mjs
+      - name: Apply reviewed approved-page mobile spacing167
+        run: node apply-rhythm167.mjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload verified site only
